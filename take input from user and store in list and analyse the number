@@ -1,0 +1,52 @@
+Write a Python program that takes marks of 5 subjects as input.
+
+Store the marks in a list.
+Calculate the average marks.
+Find the highest and lowest marks.
+Display the grade using:
+
+
+
+| Average | Grade |
+| --------| ----- |
+| 90+     |  A    |
+| 75-89   |  B    |
+| 60-74   |  C    |
+| Below 60|  D    |
+
+
+--------------------------------------------------------
+
+
+marks = []
+
+for i in range(5):
+  m = int(input("enter your marks-->"))
+  marks.append(m)
+
+print(marks)
+
+sum_of_marks = sum(marks)
+n = len(marks)
+
+avg_marks = sum_of_marks/len(marks)
+
+max_marks = max(marks)
+min_marks = min(marks)
+
+print(sum_of_marks)
+print(avg_marks)
+print(max_marks)
+print(min_marks)
+
+
+# display the grade
+
+if avg_marks >= 90:
+  print("your grade is A")
+elif avg_marks >=75:
+  print("ypur grade is B")
+elif avg_marks >=60:
+  print("your grade is C")
+else:
+  print("your grade is D")
